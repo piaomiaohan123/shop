@@ -41,9 +41,8 @@ class GoodsController  extends  Controller
 
     public function  actionList()
     {
-        echo "商品列表";
-        exit();
-        return $this->renderPartial('list');
+        $this->layout='main1';
+        return $this->render('list');
     }
 
     public function  actionAddgoods()
@@ -78,10 +77,14 @@ class GoodsController  extends  Controller
             $model->goods_price=$_POST['Goods']['goods_price'];
            $model->save(false);
            $goods_id=Yii::$app->db->getLastInsertID();
-            $goods_attr_list->attr_value=implode(',',$_POST['GoodsAttrList']['attr_value']);
-            $goods_attr_list->goods_id=$goods_id;
-            $goods_attr_list->goods_attr_id=1;
-            $goods_attr_list->save(false);
+           foreach ($_POST['GoodsAttrList']['attr_value'] as $v){
+               //此处可能有bug
+               $goods_attr_list->attr_value=$v;
+               $goods_attr_list->goods_id=$goods_id;
+               $goods_attr_list->goods_attr_id=1;
+               $goods_attr_list->save(false);
+           }
+
             $product->attr_list=implode(',',$_POST['Product']['attr_list']);
             $product->sku=$_POST['Product']['sku'];
             $product->price=$_POST['Product']['price'];

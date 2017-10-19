@@ -13123,3 +13123,1517 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1508385623.716
     'REQUEST_TIME' => 1508385623
 ]
+2017-10-19 08:08:44 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: D:\xampp\htdocs\shop\Module\admin\views\goods\list.php' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\xampp\\htdocs...', Array, Object(app\Module\admin\controllers\GoodsController))
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(411): yii\base\View->render('list', Array, Object(app\Module\admin\controllers\GoodsController))
+#2 D:\xampp\htdocs\shop\Module\admin\controllers\GoodsController.php(45): yii\base\Controller->renderPartial('list')
+#3 [internal function]: app\Module\admin\controllers\GoodsController->actionList()
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('list', Array)
+#7 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/goods/lis...', Array)
+#8 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-10-19 08:08:44 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'admin/goods/list'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=admin%2Fgoods%2Faddgoods'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1184'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Fgoods%2Flist'
+    'REQUEST_URI' => '/shop/web/index.php?r=admin%2Fgoods%2Flist'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508393324.046
+    'REQUEST_TIME' => 1508393324
+]
+2017-10-19 08:21:24 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/index".' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-10-19 08:21:24 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1330'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/shop/web/index.php?r=index/index'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394084.628
+    'REQUEST_TIME' => 1508394084
+]
+2017-10-19 08:21:32 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_id' in D:\xampp\htdocs\shop\controllers\GoodsController.php:17
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: app\controllers\GoodsController->actionIndex()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 08:21:32 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1331'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394092.06
+    'REQUEST_TIME' => 1508394092
+]
+2017-10-19 08:21:55 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_id' in D:\xampp\htdocs\shop\controllers\GoodsController.php:17
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: app\controllers\GoodsController->actionIndex()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 08:21:54 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1336'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394114.972
+    'REQUEST_TIME' => 1508394114
+]
+2017-10-19 08:21:57 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_id' in D:\xampp\htdocs\shop\controllers\GoodsController.php:17
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: app\controllers\GoodsController->actionIndex()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 08:21:57 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1338'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394117.204
+    'REQUEST_TIME' => 1508394117
+]
+2017-10-19 08:22:03 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_id' in D:\xampp\htdocs\shop\controllers\GoodsController.php:17
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: app\controllers\GoodsController->actionIndex()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 08:22:03 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1339'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394123.171
+    'REQUEST_TIME' => 1508394123
+]
+2017-10-19 08:22:20 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_id' in D:\xampp\htdocs\shop\controllers\GoodsController.php:17
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: app\controllers\GoodsController->actionIndex()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 08:22:20 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1340'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394140.524
+    'REQUEST_TIME' => 1508394140
+]
+2017-10-19 08:28:32 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_id' in D:\xampp\htdocs\shop\controllers\GoodsController.php:17
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: app\controllers\GoodsController->actionIndex()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 08:28:32 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+    'good_id' => '1'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394470'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508394470'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1387'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index&good_id=1'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index&good_id=1'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394512.072
+    'REQUEST_TIME' => 1508394512
+]
+2017-10-19 08:28:39 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_id' in D:\xampp\htdocs\shop\controllers\GoodsController.php:17
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: app\controllers\GoodsController->actionIndex()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 08:28:39 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+    'good_id' => '7'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394470'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508394470'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1389'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index&good_id=7'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index&good_id=7'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394519.12
+    'REQUEST_TIME' => 1508394519
+]
+2017-10-19 08:29:07 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_id' in D:\xampp\htdocs\shop\controllers\GoodsController.php:17
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 17, Array)
+#1 [internal function]: app\controllers\GoodsController->actionIndex()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 08:29:06 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+    'good_id' => '7'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394470'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508394470'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1393'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index&good_id=7'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index&good_id=7'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508394546.967
+    'REQUEST_TIME' => 1508394546
+]
+2017-10-19 08:44:15 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\db\Query::where(), called in D:\xampp\htdocs\shop\controllers\GoodsController.php on line 21 and defined' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\db\Query.php:575
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\db\Query.php(575): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'D:\\xampp\\htdocs...', 575, Array)
+#1 D:\xampp\htdocs\shop\controllers\GoodsController.php(21): yii\db\Query->where()
+#2 [internal function]: app\controllers\GoodsController->actionIndex()
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#7 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2017-10-19 08:44:15 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/index'
+    'goods_id' => '7'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394800'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508394800'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1537'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index&goods_id=7'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index&goods_id=7'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508395455.08
+    'REQUEST_TIME' => 1508395455
+]
+2017-10-19 09:31:13 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('addcart', Array)
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/addcart', Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2017-10-19 09:31:13 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/addcart'
+]
+
+$_POST = [
+    'number' => '1'
+    'goods_id' => '7'
+    'toJSONString' => '{\"length\":0,\"closed\":false,\"origin\":\"http://localhost\",\"name\":\"\",\"status\":\"\",\"innerWidth\":1920,\"innerHeight\":580,\"scrollX\":0,\"pageXOffset\":0,\"scrollY\":200,\"pageYOffset\":200,\"screenX\":0,\"screenY\":0,\"outerWidth\":1920,\"outerHeight\":1040,\"devicePixelRatio\":1,\"screenLeft\":0,\"screenTop\":0,\"defaultStatus\":\"\",\"defaultstatus\":\"\",\"isSecureContext\":true,\"_bdhm_loaded_d7e112eaeea65921aeaadcc0af8f2853\":true,\"MagicZoom_ua\":\"safari\",\"W\":\"mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/61.0.3163.100 safari/537.36\",\"process_request\":\"æ­£åœ¨å¤„ç†æ‚¨çš„è¯·æ±‚...\",\"cmt_empty_username\":\"è¯·è¾“å…¥æ‚¨çš„ç”¨æˆ·åç§°\",\"cmt_empty_email\":\"è¯·è¾“å…¥æ‚¨çš„ç”µå­é‚®ä»¶åœ°å€\",\"cmt_error_email\":\"ç”µå­é‚®ä»¶åœ°å€æ ¼å¼ä¸æ­£ç¡®\",\"cmt_empty_content\":\"æ‚¨æ²¡æœ‰è¾“å…¥è¯„è®ºçš„å†…å®¹\",\"captcha_not_null\":\"éªŒè¯ç ä¸èƒ½ä¸ºç©º!\",\"cmt_invalid_comments\":\"æ— æ•ˆçš„è¯„è®ºå†…å®¹!\",\"theTop\":120,\"old\":5719.1,\"pos\":5719.1,\"goods_id\":140,\"goodsattr_style\":1,\"gmt_end_time\":1664611200,\"day\":\"å¤©\",\"hour\":\"å°æ—¶\",\"minute\":\"åˆ†é’Ÿ\",\"second\":\"ç§’\",\"end\":\"ç»“æŸ\",\"goodsId\":140,\"now_time\":1466230891,\"count\":0,\"number\":\"1\"}'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508398272'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2052'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=goods/index&goods_id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508398272'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '13732'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/addcart'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/addcart'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508398273.359
+    'REQUEST_TIME' => 1508398273
+]
+2017-10-19 09:31:55 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('addcart', Array)
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/addcart', Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2017-10-19 09:31:55 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/addcart'
+]
+
+$_POST = [
+    'number' => '1'
+    'goods_id' => '7'
+    'toJSONString' => '{\"length\":0,\"closed\":false,\"origin\":\"http://localhost\",\"name\":\"\",\"status\":\"\",\"innerWidth\":1920,\"innerHeight\":580,\"scrollX\":0,\"pageXOffset\":0,\"scrollY\":200,\"pageYOffset\":200,\"screenX\":0,\"screenY\":0,\"outerWidth\":1920,\"outerHeight\":1040,\"devicePixelRatio\":1,\"screenLeft\":0,\"screenTop\":0,\"defaultStatus\":\"\",\"defaultstatus\":\"\",\"isSecureContext\":true,\"_bdhm_loaded_d7e112eaeea65921aeaadcc0af8f2853\":true,\"MagicZoom_ua\":\"safari\",\"W\":\"mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/61.0.3163.100 safari/537.36\",\"process_request\":\"æ­£åœ¨å¤„ç†æ‚¨çš„è¯·æ±‚...\",\"cmt_empty_username\":\"è¯·è¾“å…¥æ‚¨çš„ç”¨æˆ·åç§°\",\"cmt_empty_email\":\"è¯·è¾“å…¥æ‚¨çš„ç”µå­é‚®ä»¶åœ°å€\",\"cmt_error_email\":\"ç”µå­é‚®ä»¶åœ°å€æ ¼å¼ä¸æ­£ç¡®\",\"cmt_empty_content\":\"æ‚¨æ²¡æœ‰è¾“å…¥è¯„è®ºçš„å†…å®¹\",\"captcha_not_null\":\"éªŒè¯ç ä¸èƒ½ä¸ºç©º!\",\"cmt_invalid_comments\":\"æ— æ•ˆçš„è¯„è®ºå†…å®¹!\",\"theTop\":120,\"old\":5719.1,\"pos\":5719.1,\"goods_id\":140,\"goodsattr_style\":1,\"gmt_end_time\":1664611200,\"day\":\"å¤©\",\"hour\":\"å°æ—¶\",\"minute\":\"åˆ†é’Ÿ\",\"second\":\"ç§’\",\"end\":\"ç»“æŸ\",\"goodsId\":140,\"now_time\":1466230891,\"count\":0,\"number\":\"1\"}'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508398314'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2052'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=goods/index&goods_id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508398314'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '13794'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/addcart'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/addcart'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508398315.56
+    'REQUEST_TIME' => 1508398315
+]
+2017-10-19 09:33:11 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('addcart', Array)
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/addcart', Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2017-10-19 09:33:11 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/addcart'
+]
+
+$_POST = [
+    'number' => '1'
+    'goods_id' => '7'
+    'toJSONString' => '{\"length\":0,\"closed\":false,\"origin\":\"http://localhost\",\"name\":\"\",\"status\":\"\",\"innerWidth\":1920,\"innerHeight\":580,\"scrollX\":0,\"pageXOffset\":0,\"scrollY\":200,\"pageYOffset\":200,\"screenX\":0,\"screenY\":0,\"outerWidth\":1920,\"outerHeight\":1040,\"devicePixelRatio\":1,\"screenLeft\":0,\"screenTop\":0,\"defaultStatus\":\"\",\"defaultstatus\":\"\",\"isSecureContext\":true,\"_bdhm_loaded_d7e112eaeea65921aeaadcc0af8f2853\":true,\"MagicZoom_ua\":\"safari\",\"W\":\"mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/61.0.3163.100 safari/537.36\",\"process_request\":\"æ­£åœ¨å¤„ç†æ‚¨çš„è¯·æ±‚...\",\"cmt_empty_username\":\"è¯·è¾“å…¥æ‚¨çš„ç”¨æˆ·åç§°\",\"cmt_empty_email\":\"è¯·è¾“å…¥æ‚¨çš„ç”µå­é‚®ä»¶åœ°å€\",\"cmt_error_email\":\"ç”µå­é‚®ä»¶åœ°å€æ ¼å¼ä¸æ­£ç¡®\",\"cmt_empty_content\":\"æ‚¨æ²¡æœ‰è¾“å…¥è¯„è®ºçš„å†…å®¹\",\"captcha_not_null\":\"éªŒè¯ç ä¸èƒ½ä¸ºç©º!\",\"cmt_invalid_comments\":\"æ— æ•ˆçš„è¯„è®ºå†…å®¹!\",\"theTop\":120,\"old\":5719.1,\"pos\":5719.1,\"goods_id\":140,\"goodsattr_style\":1,\"gmt_end_time\":1664611200,\"day\":\"å¤©\",\"hour\":\"å°æ—¶\",\"minute\":\"åˆ†é’Ÿ\",\"second\":\"ç§’\",\"end\":\"ç»“æŸ\",\"goodsId\":140,\"now_time\":1466230891,\"count\":0,\"number\":\"1\"}'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508398389'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2052'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=goods/index&goods_id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508398389'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '13925'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/addcart'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/addcart'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508398391.285
+    'REQUEST_TIME' => 1508398391
+]
+2017-10-19 09:34:34 [::1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: app\controllers\GoodsController::beforeActin()' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(21): yii\base\Component->__call('beforeActin', Array)
+#1 D:\xampp\htdocs\shop\controllers\GoodsController.php(21): yii\web\Controller->beforeActin(Object(yii\base\InlineAction))
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(154): app\controllers\GoodsController->beforeAction(Object(yii\base\InlineAction))
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/index', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#7 {main}
+2017-10-19 09:34:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'goods/index'
+    'goods_id' => '7'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508398389'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508398389'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '14094'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=goods/index&goods_id=7'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/index&goods_id=7'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508398473.917
+    'REQUEST_TIME' => 1508398473
+]
+2017-10-19 09:34:51 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Controller.php:166
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('addcart', Array)
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/addcart', Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#5 {main}
+2017-10-19 09:34:51 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/addcart'
+]
+
+$_POST = [
+    'number' => '1'
+    'goods_id' => '7'
+    'toJSONString' => '{\"length\":0,\"closed\":false,\"origin\":\"http://localhost\",\"name\":\"\",\"status\":\"\",\"innerWidth\":1920,\"innerHeight\":580,\"scrollX\":0,\"pageXOffset\":0,\"scrollY\":200,\"pageYOffset\":200,\"screenX\":0,\"screenY\":0,\"outerWidth\":1920,\"outerHeight\":1040,\"devicePixelRatio\":1,\"screenLeft\":0,\"screenTop\":0,\"defaultStatus\":\"\",\"defaultstatus\":\"\",\"isSecureContext\":true,\"_bdhm_loaded_d7e112eaeea65921aeaadcc0af8f2853\":true,\"MagicZoom_ua\":\"safari\",\"W\":\"mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/61.0.3163.100 safari/537.36\",\"process_request\":\"æ­£åœ¨å¤„ç†æ‚¨çš„è¯·æ±‚...\",\"cmt_empty_username\":\"è¯·è¾“å…¥æ‚¨çš„ç”¨æˆ·åç§°\",\"cmt_empty_email\":\"è¯·è¾“å…¥æ‚¨çš„ç”µå­é‚®ä»¶åœ°å€\",\"cmt_error_email\":\"ç”µå­é‚®ä»¶åœ°å€æ ¼å¼ä¸æ­£ç¡®\",\"cmt_empty_content\":\"æ‚¨æ²¡æœ‰è¾“å…¥è¯„è®ºçš„å†…å®¹\",\"captcha_not_null\":\"éªŒè¯ç ä¸èƒ½ä¸ºç©º!\",\"cmt_invalid_comments\":\"æ— æ•ˆçš„è¯„è®ºå†…å®¹!\",\"theTop\":120,\"old\":5719.1,\"pos\":5719.1,\"goods_id\":140,\"goodsattr_style\":1,\"gmt_end_time\":1664611200,\"day\":\"å¤©\",\"hour\":\"å°æ—¶\",\"minute\":\"åˆ†é’Ÿ\",\"second\":\"ç§’\",\"end\":\"ç»“æŸ\",\"goodsId\":140,\"now_time\":1466230891,\"count\":0,\"number\":\"1\"}'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508398491'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2052'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=goods/index&goods_id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508398491'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '14126'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/addcart'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/addcart'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508398491.718
+    'REQUEST_TIME' => 1508398491
+]
+2017-10-19 09:35:24 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: number, goods_id' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Controller.php:149
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('addcart', Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/addcart', Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2017-10-19 09:35:24 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/addcart'
+]
+
+$_POST = [
+    'number' => '1'
+    'goods_id' => '7'
+    'toJSONString' => '{\"length\":0,\"closed\":false,\"origin\":\"http://localhost\",\"name\":\"\",\"status\":\"\",\"innerWidth\":1920,\"innerHeight\":580,\"scrollX\":0,\"pageXOffset\":0,\"scrollY\":200,\"pageYOffset\":200,\"screenX\":0,\"screenY\":0,\"outerWidth\":1920,\"outerHeight\":1040,\"devicePixelRatio\":1,\"screenLeft\":0,\"screenTop\":0,\"defaultStatus\":\"\",\"defaultstatus\":\"\",\"isSecureContext\":true,\"_bdhm_loaded_d7e112eaeea65921aeaadcc0af8f2853\":true,\"MagicZoom_ua\":\"safari\",\"W\":\"mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/61.0.3163.100 safari/537.36\",\"process_request\":\"æ­£åœ¨å¤„ç†æ‚¨çš„è¯·æ±‚...\",\"cmt_empty_username\":\"è¯·è¾“å…¥æ‚¨çš„ç”¨æˆ·åç§°\",\"cmt_empty_email\":\"è¯·è¾“å…¥æ‚¨çš„ç”µå­é‚®ä»¶åœ°å€\",\"cmt_error_email\":\"ç”µå­é‚®ä»¶åœ°å€æ ¼å¼ä¸æ­£ç¡®\",\"cmt_empty_content\":\"æ‚¨æ²¡æœ‰è¾“å…¥è¯„è®ºçš„å†…å®¹\",\"captcha_not_null\":\"éªŒè¯ç ä¸èƒ½ä¸ºç©º!\",\"cmt_invalid_comments\":\"æ— æ•ˆçš„è¯„è®ºå†…å®¹!\",\"theTop\":120,\"old\":5719.1,\"pos\":5719.1,\"goods_id\":140,\"goodsattr_style\":1,\"gmt_end_time\":1664611200,\"day\":\"å¤©\",\"hour\":\"å°æ—¶\",\"minute\":\"åˆ†é’Ÿ\",\"second\":\"ç§’\",\"end\":\"ç»“æŸ\",\"goodsId\":140,\"now_time\":1466230891,\"count\":0,\"number\":\"1\"}'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508398524'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2052'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=goods/index&goods_id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508398524'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '14205'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/addcart'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/addcart'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508398524.766
+    'REQUEST_TIME' => 1508398524
+]
+2017-10-19 09:49:13 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: cart/' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('cart', Array)
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-10-19 09:49:13 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'cart'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508398560'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508398560'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1460'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cart'
+    'REQUEST_URI' => '/shop/web/index.php?r=cart'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508399353.635
+    'REQUEST_TIME' => 1508399353
+]
+2017-10-19 09:51:45 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: num' in D:\xampp\htdocs\shop\controllers\GoodsController.php:37
+Stack trace:
+#0 D:\xampp\htdocs\shop\controllers\GoodsController.php(37): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 37, Array)
+#1 [internal function]: app\controllers\GoodsController->actionAddcart()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('addcart', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('goods/addcart', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-10-19 09:51:45 [::1][-][j6uugc6jkb79ddu5rjnp8grhv7][info][application] $_GET = [
+    'r' => 'goods/addcart'
+]
+
+$_POST = [
+    'number' => '1'
+    'goods_id' => '7'
+    'toJSONString' => '{\"length\":0,\"closed\":false,\"origin\":\"http://localhost\",\"name\":\"\",\"status\":\"\",\"innerWidth\":1920,\"innerHeight\":580,\"scrollX\":0,\"pageXOffset\":0,\"scrollY\":200,\"pageYOffset\":200,\"screenX\":0,\"screenY\":0,\"outerWidth\":1920,\"outerHeight\":1040,\"devicePixelRatio\":1,\"screenLeft\":0,\"screenTop\":0,\"defaultStatus\":\"\",\"defaultstatus\":\"\",\"isSecureContext\":true,\"_bdhm_loaded_d7e112eaeea65921aeaadcc0af8f2853\":true,\"MagicZoom_ua\":\"safari\",\"W\":\"mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/61.0.3163.100 safari/537.36\",\"process_request\":\"æ­£åœ¨å¤„ç†æ‚¨çš„è¯·æ±‚...\",\"cmt_empty_username\":\"è¯·è¾“å…¥æ‚¨çš„ç”¨æˆ·åç§°\",\"cmt_empty_email\":\"è¯·è¾“å…¥æ‚¨çš„ç”µå­é‚®ä»¶åœ°å€\",\"cmt_error_email\":\"ç”µå­é‚®ä»¶åœ°å€æ ¼å¼ä¸æ­£ç¡®\",\"cmt_empty_content\":\"æ‚¨æ²¡æœ‰è¾“å…¥è¯„è®ºçš„å†…å®¹\",\"captcha_not_null\":\"éªŒè¯ç ä¸èƒ½ä¸ºç©º!\",\"cmt_invalid_comments\":\"æ— æ•ˆçš„è¯„è®ºå†…å®¹!\",\"theTop\":120,\"old\":5719.1,\"pos\":5719.1,\"goods_id\":140,\"goodsattr_style\":1,\"gmt_end_time\":1664611200,\"day\":\"å¤©\",\"hour\":\"å°æ—¶\",\"minute\":\"åˆ†é’Ÿ\",\"second\":\"ç§’\",\"end\":\"ç»“æŸ\",\"goodsId\":140,\"now_time\":1466230891,\"count\":0,\"number\":\"1\"}'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '1'
+    ]
+    '_csrf' => 'f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"DÜ×,¸Ï”mnÄ	Ò\0‹½ý`\'ú`ª+ÿç•ë`\";}'
+    'PHPSESSID' => 'j6uugc6jkb79ddu5rjnp8grhv7'
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508399503'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '2052'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=goods/index&goods_id=7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'ECS[visit_times]=1; _csrf=f15ae634b9f895cb1ef9ef7caa7afb803483718438bf653a74416d3320b196e6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22D%DC%D7%2C%B8%CF%94m%11n%C4%09%D2%00%8B%17%19%BD%90%FD%60%08%27%FA%60%AA%2B%FF%E7%95%EB%60%22%3B%7D; PHPSESSID=j6uugc6jkb79ddu5rjnp8grhv7; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Hm_lpvt_d7e112eaeea65921aeaadcc0af8f2853=1508399503'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Administrator\\AppData\\Local\\atom\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '1677'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=goods/addcart'
+    'REQUEST_URI' => '/shop/web/index.php?r=goods/addcart'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1508399505.373
+    'REQUEST_TIME' => 1508399505
+]
