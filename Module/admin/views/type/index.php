@@ -117,7 +117,7 @@
                     </a>
                     <ul class="submenu">
                         <li>
-                            <a href="/admin/document/index.html">
+                            <a href="<?php echo Url::to(['goods/list']) ?>">
                                     <span class="menu-text">
                                         商品列表                                    </span>
                                 <i class="menu-expand"></i>
@@ -125,13 +125,12 @@
                         </li>
 
                         <li>
-                            <a href="/admin/document/index.html">
+                            <a href="<?php echo Url::to(['goods/addgoods']) ?>">
                                     <span class="menu-text">
                                         添加商品                                    </span>
                                 <i class="menu-expand"></i>
                             </a>
                         </li>
-
 
                         <li>
                             <a href="<?php echo Url::to(['category/index']) ?>">
