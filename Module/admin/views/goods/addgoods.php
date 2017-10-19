@@ -191,36 +191,53 @@ use kartik\file\FileInput;
 
 
 
-              <?= Html::submitButton('添加商品', ['class' => 'btn btn-default']) ?>
-                <?php  ActiveForm::end();?>
+
             </div>
             <div class="tab-pane fade" id="ios">
-                <?php $form=ActiveForm::begin(['method'=>'post']) ?>
+
                 <?=$form->field($model,'goods_style_name')->widget('kucha\ueditor\UEditor',[]);?>
-                <?= Html::submitButton('添加商品', ['class' => 'btn btn-default']) ?>
-                <?php  ActiveForm::end();?>
+
+
             </div>
             <div class="tab-pane fade" id="xiangce">
               多图上传
             </div>
             <div class="tab-pane fade" id="ejb">
-                <?php $form=ActiveForm::begin(['method'=>'post']) ?>
+
                 <?=$form->field($model,'category_id')->dropDownList(\yii\helpers\ArrayHelper::map($category,'category_id','category_name'));?>
                 //此处简单写,只显示手机的参数
 
                 <?php foreach ($canshu as $k=>$v): ?>
-                    <?=$form->field($goods_attr_list,'attr_value')->dropDownList(explode(PHP_EOL,$v->attr_may_value));?>
+                    <?=$form->field($goods_attr_list,'attr_value[]')->dropDownList(explode(PHP_EOL,$v->attr_may_value));?>
 
                 <?php endforeach; ?>
-                <?= Html::submitButton('添加商品', ['class' => 'btn btn-default']) ?>
-                <?php  ActiveForm::end();?>
+
+
+            </div>
+
+            <div class="tab-pane fade" id="huopin">
+
+
+                <label>此处简单写,只显示手机的规格</label>
+
+                <?php foreach ($guige as $k=>$v): ?>
+                    <?=$form->field($product,'attr_list[]')->dropDownList(explode(PHP_EOL,$v->attr_may_value));?>
+
+                <?php endforeach; ?>
+                <?=$form->field($product,'sku');?>
+                <?=$form->field($product,'price');?>
+                <?=$form->field($product,'goods_sn');?>
+
+
             </div>
 
             <div class="tab-pane fade" id="meta">
-                <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+                <p>以后补充
                 </p>
             </div>
         </div>
+        <?= Html::submitButton('添加商品', ['class' => 'btn btn-default']) ?>
+        <?php  ActiveForm::end();?>
         <!-- /Page Body -->
     </div>
 

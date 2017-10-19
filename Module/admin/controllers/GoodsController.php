@@ -12,6 +12,7 @@ use app\models\Brand;
 use app\models\Category;
 use app\models\Goods;
 use app\models\GoodsAttrList;
+use app\models\Product;
 use app\models\TypeAttr;
 use Yii;
 use yii\web\Controller;
@@ -40,6 +41,8 @@ class GoodsController  extends  Controller
 
     public function  actionList()
     {
+        echo "商品列表";
+        exit();
         return $this->renderPartial('list');
     }
 
@@ -47,6 +50,7 @@ class GoodsController  extends  Controller
     {
         $this->layout='main1';
         $model=new Goods();
+        $product=new Product();
         $category=Category::find()->all();
         $brand=Brand::find()->all();
         //只查询手机的参数   category中手机的id是7
@@ -54,6 +58,41 @@ class GoodsController  extends  Controller
         $goods_attr_list=new GoodsAttrList();
         //只取出type=0的，，就是参数
         $canshu=TypeAttr::find()->select(['goods_attr_id','attr_name','attr_may_value'])->where('goods_type_id=:id and attr_type=:type',[':id'=>$goods_type_id['goods_type_id'],':type'=>0])->all();
-        return $this->render('addgoods',['model'=>$model,'category'=>$category,'brand'=>$brand,'canshu'=>$canshu,'goods_attr_list'=>$goods_attr_list]);
+        $guige=TypeAttr::find()->select(['goods_attr_id','attr_name','attr_may_value'])->where('goods_type_id=:id and attr_type=:type',[':id'=>$goods_type_id['goods_type_id'],':type'=>1])->all();
+
+        $request=Yii::$app->request;
+        if ($request->isPost){
+
+                $model=new Goods();
+                $product=new Product();
+                $goods_attr_list=new GoodsAttrList();
+            $model->goods_name=$_POST['Goods']['goods_name'];
+            $model->admin_user_id=1;
+            $model->goods_type_id=1;
+
+            $model->promote_word=$_POST['Goods']['promote_word'];
+            $model->category_id=$_POST['Goods']['category_id'];
+            $model->brand_id=$_POST['Goods']['brand_id'];
+            $model->goods_sn=$_POST['Goods']['goods_sn'];
+            $model->sku=$_POST['Goods']['sku'];
+            $model->goods_price=$_POST['Goods']['goods_price'];
+           $model->save(false);
+           $goods_id=Yii::$app->db->getLastInsertID();
+            $goods_attr_list->attr_value=implode(',',$_POST['GoodsAttrList']['attr_value']);
+            $goods_attr_list->goods_id=$goods_id;
+            $goods_attr_list->goods_attr_id=1;
+            $goods_attr_list->save(false);
+            $product->attr_list=implode(',',$_POST['Product']['attr_list']);
+            $product->sku=$_POST['Product']['sku'];
+            $product->price=$_POST['Product']['price'];
+            $product->goods_sn=$_POST['Product']['goods_sn'];
+            $product->goods_id=$goods_id;
+           $product->save(false);
+           $this->redirect(['goods/list']);
+
+        }else{
+            return $this->render('addgoods',['model'=>$model,'category'=>$category,'brand'=>$brand,'canshu'=>$canshu,'goods_attr_list'=>$goods_attr_list,'guige'=>$guige,'product'=>$product]);
+        }
+
     }
 }

@@ -58,7 +58,7 @@ class Goods extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['admin_user_id', 'goods_type_id', 'brand_id', 'category_id', 'goods_price', 'promote_price'], 'required'],
+            [[ 'brand_id', 'category_id'], 'required'],
             [['admin_user_id', 'goods_type_id', 'brand_id', 'category_id', 'is_promote', 'promote_stime', 'promote_etime', 'is_hot', 'is_first', 'is_well', 'is_on_sale', 'created', 'updated', 'view', 'sku'], 'integer'],
             [['goods_price', 'promote_price'], 'number'],
             [['goods_name', 'promote_word', 'goods_sn', 'small_pic', 'medium_pic', 'source_pic'], 'string', 'max' => 45],
