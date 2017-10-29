@@ -164,7 +164,25 @@ use kartik\file\FileInput;
         <!-- /Page Breadcrumb -->
 
 
-
+        <table class="table">
+            <caption> 基本的表格布局 </caption>
+            <thead>
+            <tr>
+                <th> 商品名称 </th>
+                <th> goodsid </th>
+                <th>库存</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php  foreach ($data as $v):?>
+            <tr>
+                <td><?php echo $v->goods_name?></td>
+                <td><?php echo $v->goods_id?></td>
+              <td>  <button type="button" class="btn btn-default"><a href="<?php echo Url::to(['goods/huopin','goods_id'=>$v->goods_id])?>">库存</a> </button></td>
+            </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
 
         <!-- /Page Body -->
     </div>

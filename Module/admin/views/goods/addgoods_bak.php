@@ -1,5 +1,4 @@
-<?php
-use yii\helpers\Url;
+<?php  use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
@@ -205,22 +204,29 @@ use kartik\file\FileInput;
             </div>
             <div class="tab-pane fade" id="ejb">
 
+                <?=$form->field($model,'category_id')->dropDownList(\yii\helpers\ArrayHelper::map($category,'category_id','category_name'));?>
+                //此处简单写,只显示手机的参数
 
+                <?php foreach ($canshu as $k=>$v): ?>
+                    <?=$form->field($goods_attr_list,'attr_value[]')->dropDownList(explode(PHP_EOL,$v->attr_may_value));?>
 
-                <select class="form-control" id="category_id" onchange="gaibian();">
-                    <?php foreach ($goods_type as $v):?>
-                        <option  value="<?php echo $v->goods_type_id ?>"><?php echo $v->type_name ?></option>
-                    <?php endforeach;?>
-                </select>
+                <?php endforeach; ?>
 
 
             </div>
 
             <div class="tab-pane fade" id="huopin">
 
-            类型
-
-
+<!---->
+<!--                <label>此处简单写,只显示手机的规格</label>-->
+<!---->
+<!--                --><?php //foreach ($guige as $k=>$v): ?>
+<!--                    --><?//=$form->field($product,'attr_list[]')->dropDownList(explode(PHP_EOL,$v->attr_may_value));?>
+<!---->
+<!--                --><?php //endforeach; ?>
+<!--                --><?//=$form->field($product,'sku');?>
+<!--                --><?//=$form->field($product,'price');?>
+<!--                --><?//=$form->field($product,'goods_sn');?>
 
 
             </div>
@@ -232,9 +238,6 @@ use kartik\file\FileInput;
         </div>
         <?= Html::submitButton('添加商品', ['class' => 'btn btn-default']) ?>
         <?php  ActiveForm::end();?>
-
-
-        <div id="attrs"></div>
         <!-- /Page Body -->
     </div>
 
@@ -254,62 +257,6 @@ use kartik\file\FileInput;
 <!--Beyond Scripts-->
 <script src="assets/admin/style/beyond.js"></script>
 
-<script type="text/javascript">
-    function  gaibian() {
-        var goods_type_id='';
-        goods_type_id= $("#category_id option:selected").val();
-        $.ajax({
-            type:"GET",
-            url:"<?php echo  Url::to(['goods/categoryattr','goods_type_id'=>'']) ?>"+goods_type_id,
-            dataType:"json",
-
-            success:function (data) {
-               var html='';
-               $(data).each(function(k,v){
-                   html+='<form action="<?php echo Url::to(['goods/goo']) ?> " method="post"> <li>';
-                   if(v.attr_type=='1')
-                       html+='<a href="#" onclick="addnewattr(this)">[+]</a>';
-                   html+=v.attr_name+":";
-                   if(v.attr_type=='0'){
-                       html+='<input type="text" name="attr_may_value['+v.goods_attr_id+'][]"/>';
-                   }else{
-                       html+='<select name="attr_may_value['+v.goods_attr_id+'][]"><option  value="">请选择</option>';
-                       var _attr=v.attr_may_value.split("\r\n");
-                       //循环每个值制作option
-                       for( var i=0;i<_attr.length;i++){
-                           html+='<option value="'+_attr[i]+'">';
-                           html+=_attr[i];
-                           html+='</option>';
-
-
-                       }
-                       html+='</select>';
-
-                   }
-                   html+='</li> ';
-                });
-               html+="<input type=\"submit\" value=\"Submit\" /></form>";
-                $("#attrs").html(html);
-            }
-        });
-
-    }
-    
-    function  addnewattr(a) {
-        var li=$(a).parent();
-        if ($(a).text()=='[+]'){
-
-            var newli=li.clone();
-            newli.find("a").text('[-]');
-            li.after(newli);
-        }else{
-
-            li.remove();
-        }
-    }
-
-
-</script>
 
 
 </body></html>
