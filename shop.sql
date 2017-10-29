@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2017-10-19 16:20:16
+Date: 2017-10-29 13:39:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -85,7 +85,7 @@ INSERT INTO `category` VALUES ('3', '厨房电器', '0', null, null, '0', null, 
 INSERT INTO `category` VALUES ('4', '电脑', '0', null, null, '0', null, '11,12', '5', '2');
 INSERT INTO `category` VALUES ('5', '空调', '1', null, null, '0', null, null, '5', null);
 INSERT INTO `category` VALUES ('6', '手机通讯', '0', null, null, '0', null, null, '5', null);
-INSERT INTO `category` VALUES ('7', '手机', '6', null, null, '0', null, '1,2,3,6,7,10', '5', '1');
+INSERT INTO `category` VALUES ('7', '手机', '6', null, null, '0', null, '1,2,3,4,6,7,10', '5', '1');
 INSERT INTO `category` VALUES ('8', '对讲机', '6', null, null, '0', null, null, '5', null);
 INSERT INTO `category` VALUES ('9', '平板电脑1', '4', null, null, '0', null, null, '5', null);
 INSERT INTO `category` VALUES ('10', '平板电脑11', '9', null, null, '0', null, null, '5', null);
@@ -173,14 +173,22 @@ CREATE TABLE `goods_attr_list` (
   KEY `fk_goods_attr_list_type_attr1_idx` (`goods_attr_id`),
   CONSTRAINT `fk_goods_attr_list_goods1` FOREIGN KEY (`goods_id`) REFERENCES `goods` (`goods_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_goods_attr_list_type_attr1` FOREIGN KEY (`goods_attr_id`) REFERENCES `type_attr` (`goods_attr_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of goods_attr_list
 -- ----------------------------
-INSERT INTO `goods_attr_list` VALUES ('12', '5.6英寸', '7', '1');
-INSERT INTO `goods_attr_list` VALUES ('13', '八核', '7', '3');
-INSERT INTO `goods_attr_list` VALUES ('14', 'gsm', '7', '6');
+INSERT INTO `goods_attr_list` VALUES ('15', '4.5英寸', '7', '1');
+INSERT INTO `goods_attr_list` VALUES ('16', '安卓', '7', '2');
+INSERT INTO `goods_attr_list` VALUES ('17', 'i7', '7', '3');
+INSERT INTO `goods_attr_list` VALUES ('18', '899', '7', '4');
+INSERT INTO `goods_attr_list` VALUES ('19', '套餐一', '7', '5');
+INSERT INTO `goods_attr_list` VALUES ('20', '套餐二', '7', '5');
+INSERT INTO `goods_attr_list` VALUES ('21', 'GSM', '7', '6');
+INSERT INTO `goods_attr_list` VALUES ('22', 'WCDMA', '7', '6');
+INSERT INTO `goods_attr_list` VALUES ('23', '红色', '7', '7');
+INSERT INTO `goods_attr_list` VALUES ('24', '蓝色', '7', '7');
+INSERT INTO `goods_attr_list` VALUES ('25', '100000ma', '7', '10');
 
 -- ----------------------------
 -- Table structure for goods_content
@@ -236,16 +244,13 @@ CREATE TABLE `product` (
   PRIMARY KEY (`product_id`),
   KEY `fk_product_goods1_idx` (`goods_id`),
   CONSTRAINT `fk_product_goods1` FOREIGN KEY (`goods_id`) REFERENCES `goods` (`goods_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of product
 -- ----------------------------
-INSERT INTO `product` VALUES ('4', '12', '100.00', '892', '5,1,6', '1');
-INSERT INTO `product` VALUES ('5', '13', '120.00', '891', '1,1,5', '1');
-INSERT INTO `product` VALUES ('6', '14', '200.00', '890', '7,1,6', '1');
-INSERT INTO `product` VALUES ('7', '20', '344.00', '555', '2,1,2', '5');
-INSERT INTO `product` VALUES ('8', '123', '123.00', '123', '3,1,2', '7');
+INSERT INTO `product` VALUES ('12', '0', '123.00', null, '19,21,23', '7');
+INSERT INTO `product` VALUES ('13', '0', '123.00', null, '20,22,24', '7');
 
 -- ----------------------------
 -- Table structure for type_attr
