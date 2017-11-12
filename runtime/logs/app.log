@@ -19029,3 +19029,381 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1509251192.693
     'REQUEST_TIME' => 1509251192
 ]
+2017-11-04 14:38:58 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/auth/login".' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/auth/logi...', Array)
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-04 14:38:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/auth/login'
+]
+
+$_COOKIE = [
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Webstorm-3b4604bb' => '41c9a7c4-8581-4094-9295-88865cdf56b8'
+    'ECS' => [
+        'visit_times' => '2'
+    ]
+    'UM_distinctid' => '15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940'
+    'CNZZDATA155540' => 'cnzz_eid=1533499784-1509178208-&ntime=1509631281'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Webstorm-3b4604bb=41c9a7c4-8581-4094-9295-88865cdf56b8; ECS[visit_times]=2; UM_distinctid=15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940; CNZZDATA155540=cnzz_eid%3D1533499784-1509178208-%26ntime%3D1509631281'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '13217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin/auth/login'
+    'REQUEST_URI' => '/shop/web/index.php?r=admin/auth/login'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509802737.199
+    'REQUEST_TIME' => 1509802737
+]
+2017-11-04 14:39:03 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/index".' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/index', Array)
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-04 14:39:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Webstorm-3b4604bb' => '41c9a7c4-8581-4094-9295-88865cdf56b8'
+    'ECS' => [
+        'visit_times' => '2'
+    ]
+    'UM_distinctid' => '15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940'
+    'CNZZDATA155540' => 'cnzz_eid=1533499784-1509178208-&ntime=1509631281'
+    '_csrf' => '879bbbb145b251d0594f789f127d4d5009ba9192201645eed7ebf0ad559c9283a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ÐÐs”²cŠ‚‘*6
+UgÖ”/{ëSp¯úñê\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Webstorm-3b4604bb=41c9a7c4-8581-4094-9295-88865cdf56b8; ECS[visit_times]=2; UM_distinctid=15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940; CNZZDATA155540=cnzz_eid%3D1533499784-1509178208-%26ntime%3D1509631281; _csrf=879bbbb145b251d0594f789f127d4d5009ba9192201645eed7ebf0ad559c9283a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%D0%D0%1Bs%94%B2c%8A%04%8F%82%91%2A6%0AU%10g%D6%94%2F%7B%EBSp%9D%AF%FA%F1%01%0D%EA%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '13217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin/index'
+    'REQUEST_URI' => '/shop/web/index.php?r=admin/index'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509802743.098
+    'REQUEST_TIME' => 1509802743
+]
+2017-11-04 14:39:08 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "admin/index/index".' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/index/ind...', Array)
+#1 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-11-04 14:39:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'admin/index/index'
+]
+
+$_COOKIE = [
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Webstorm-3b4604bb' => '41c9a7c4-8581-4094-9295-88865cdf56b8'
+    'ECS' => [
+        'visit_times' => '2'
+    ]
+    'UM_distinctid' => '15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940'
+    'CNZZDATA155540' => 'cnzz_eid=1533499784-1509178208-&ntime=1509631281'
+    '_csrf' => '879bbbb145b251d0594f789f127d4d5009ba9192201645eed7ebf0ad559c9283a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ÐÐs”²cŠ‚‘*6
+UgÖ”/{ëSp¯úñê\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Webstorm-3b4604bb=41c9a7c4-8581-4094-9295-88865cdf56b8; ECS[visit_times]=2; UM_distinctid=15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940; CNZZDATA155540=cnzz_eid%3D1533499784-1509178208-%26ntime%3D1509631281; _csrf=879bbbb145b251d0594f789f127d4d5009ba9192201645eed7ebf0ad559c9283a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%D0%D0%1Bs%94%B2c%8A%04%8F%82%91%2A6%0AU%10g%D6%94%2F%7B%EBSp%9D%AF%FA%F1%01%0D%EA%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '13217'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Findex%2Findex'
+    'REQUEST_URI' => '/shop/web/index.php?r=admin%2Findex%2Findex'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509802747.96
+    'REQUEST_TIME' => 1509802747
+]
+2017-11-04 14:41:37 [::1][-][gmtjf18hr897ncbbpd7fa51ap6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_type_id' in D:\xampp\htdocs\shop\Module\admin\controllers\TypeController.php:42
+Stack trace:
+#0 D:\xampp\htdocs\shop\Module\admin\controllers\TypeController.php(42): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 42, Array)
+#1 [internal function]: app\Module\admin\controllers\TypeController->actionAttrlist()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('attrlist', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/type/attr...', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-11-04 14:41:37 [::1][-][gmtjf18hr897ncbbpd7fa51ap6][info][application] $_GET = [
+    'r' => 'admin/type/attrlist'
+    'attr_name' => 'å±å¹•å°ºå¯¸'
+]
+
+$_COOKIE = [
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Webstorm-3b4604bb' => '41c9a7c4-8581-4094-9295-88865cdf56b8'
+    'ECS' => [
+        'visit_times' => '2'
+    ]
+    'UM_distinctid' => '15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940'
+    'CNZZDATA155540' => 'cnzz_eid=1533499784-1509178208-&ntime=1509631281'
+    '_csrf' => '879bbbb145b251d0594f789f127d4d5009ba9192201645eed7ebf0ad559c9283a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ÐÐs”²cŠ‚‘*6
+UgÖ”/{ëSp¯úñê\";}'
+    'PHPSESSID' => 'gmtjf18hr897ncbbpd7fa51ap6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=admin%2Ftype%2Fattrlist&goods_type_id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Webstorm-3b4604bb=41c9a7c4-8581-4094-9295-88865cdf56b8; ECS[visit_times]=2; UM_distinctid=15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940; CNZZDATA155540=cnzz_eid%3D1533499784-1509178208-%26ntime%3D1509631281; _csrf=879bbbb145b251d0594f789f127d4d5009ba9192201645eed7ebf0ad559c9283a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%D0%D0%1Bs%94%B2c%8A%04%8F%82%91%2A6%0AU%10g%D6%94%2F%7B%EBSp%9D%AF%FA%F1%01%0D%EA%22%3B%7D; PHPSESSID=gmtjf18hr897ncbbpd7fa51ap6'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '13298'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Ftype%2Fattrlist&attr_name=%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8'
+    'REQUEST_URI' => '/shop/web/index.php?r=admin%2Ftype%2Fattrlist&attr_name=%E5%B1%8F%E5%B9%95%E5%B0%BA%E5%AF%B8'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509802897.568
+    'REQUEST_TIME' => 1509802897
+]
+2017-11-04 14:41:41 [::1][-][gmtjf18hr897ncbbpd7fa51ap6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: goods_type_id' in D:\xampp\htdocs\shop\Module\admin\controllers\TypeController.php:42
+Stack trace:
+#0 D:\xampp\htdocs\shop\Module\admin\controllers\TypeController.php(42): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 42, Array)
+#1 [internal function]: app\Module\admin\controllers\TypeController->actionAttrlist()
+#2 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('attrlist', Array)
+#5 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('admin/type/attr...', Array)
+#6 D:\xampp\htdocs\shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\shop\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-11-04 14:41:41 [::1][-][gmtjf18hr897ncbbpd7fa51ap6][info][application] $_GET = [
+    'r' => 'admin/type/attrlist'
+    'attr_name' => 'é¢œè‰²'
+]
+
+$_COOKIE = [
+    'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853' => '1508394213'
+    'Webstorm-3b4604bb' => '41c9a7c4-8581-4094-9295-88865cdf56b8'
+    'ECS' => [
+        'visit_times' => '2'
+    ]
+    'UM_distinctid' => '15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940'
+    'CNZZDATA155540' => 'cnzz_eid=1533499784-1509178208-&ntime=1509631281'
+    '_csrf' => '879bbbb145b251d0594f789f127d4d5009ba9192201645eed7ebf0ad559c9283a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ÐÐs”²cŠ‚‘*6
+UgÖ”/{ëSp¯úñê\";}'
+    'PHPSESSID' => 'gmtjf18hr897ncbbpd7fa51ap6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => [
+        'username' => 'hades'
+        'isLogin' => 1
+    ]
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/shop/web/index.php?r=admin%2Ftype%2Fattrlist&goods_type_id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1508394213; Webstorm-3b4604bb=41c9a7c4-8581-4094-9295-88865cdf56b8; ECS[visit_times]=2; UM_distinctid=15f6218fba4a37-08c74353d21383-464a0129-1fa400-15f6218fba5940; CNZZDATA155540=cnzz_eid%3D1533499784-1509178208-%26ntime%3D1509631281; _csrf=879bbbb145b251d0594f789f127d4d5009ba9192201645eed7ebf0ad559c9283a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%D0%D0%1Bs%94%B2c%8A%04%8F%82%91%2A6%0AU%10g%D6%94%2F%7B%EBSp%9D%AF%FA%F1%01%0D%EA%22%3B%7D; PHPSESSID=gmtjf18hr897ncbbpd7fa51ap6'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Administrator\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/shop/web/index.php'
+    'REMOTE_PORT' => '13309'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=admin%2Ftype%2Fattrlist&attr_name=%E9%A2%9C%E8%89%B2'
+    'REQUEST_URI' => '/shop/web/index.php?r=admin%2Ftype%2Fattrlist&attr_name=%E9%A2%9C%E8%89%B2'
+    'SCRIPT_NAME' => '/shop/web/index.php'
+    'PHP_SELF' => '/shop/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1509802901.817
+    'REQUEST_TIME' => 1509802901
+]

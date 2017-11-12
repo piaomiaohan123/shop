@@ -17,6 +17,10 @@ class DefaultController extends Controller
      */
     public function actionIndex()
     {
+
+        foreach ($_POST['piliang'] as $k=>$v) {
+            var_dump($v);
+        }
         return $this->renderPartial('index');
     }
     public function  actionLogin()
